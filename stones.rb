@@ -6,7 +6,7 @@ def lastStoneWeight(weights)
     # get the two largest stones
     stone1 = weights.shift()
     stone2 = weights.shift()
-    # Reduce the larger stone by the weight of the smaller stone
+    # Reduce the larger stone by the weight of the smaller stone and push it in
     weights.push(stone1 - stone2) if stone1 != stone2
   end
   # Return the weight of the last stone or 0 if there are no stones left
